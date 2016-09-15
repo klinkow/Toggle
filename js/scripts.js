@@ -1,7 +1,14 @@
 $(document).ready(function() {
-  $("p").click(function() {
-    $(".star-hidden").toggle();
-    $(".star-showing").toggle();
+  $("button#whitebutton").click(function() {
+    $(".white").toggle();
+    $(".black").toggle();
+    event.preventDefault();
+  });
+
+  $("button#blackbutton").click(function() {
+    $(".white").toggle();
+    $(".black").toggle();
+    event.preventDefault();
   });
 
 });
